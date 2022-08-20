@@ -1,0 +1,140 @@
+/* font 
+heading font:
+font-family: 'Poppins', sans-serif;
+body font:
+font-family: 'Open Sans', sans-serif;
+
+*/
+
+/* global rules  */
+:root{
+    --Primary: hsl(257, 40%, 49%);
+    --seconder: hsl(300, 69%, 71%);
+}
+
+.container{
+    padding-left: 85px;
+    padding-right: 85px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif ;
+    background-color: var(--Primary);
+    background-image: url('../images/bg-desktop.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    margin-top: 78px;
+    min-height: 87px;
+    font-family: 'Poppins', sans-serif;
+
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container .navbar ul{
+    display: flex;
+}
+@media (max-width:767px) {
+    header .container .navbar ul{
+        display: none;
+    }
+    
+}
+header .container .navbar li{
+    padding-left:  85px;
+}
+header .container .navbar li a{
+    color: white;
+    font-size: 20px;
+}
+header .container .navbar li a:hover{
+    border-bottom: 3px solid var(--seconder);
+}
+.hero{
+    width: 100%;
+    height: 100%;
+}
+.hero .container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(600px , 1fr));
+    margin-top: 140px;
+}
+.hero .container .text{
+    margin-bottom: 100px;
+}
+.hero .container .text h1{
+    color: white;
+    font-size: 50px;
+}
+.hero .container .text p{
+    max-width: 465px;
+    letter-spacing: 1.5;
+    line-height: 1.7;
+    color: white;
+}
+.hero .container .text button{
+    outline: none;
+    border: none;
+    padding: 18px 64px;
+    margin-top: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 5px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+.hero .container .text button:hover{
+    background-color: var(--seconder);
+}
+.icons{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.icons .container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.icons .container ul{
+    display: flex;
+}
+.icons .container li{
+    position: relative;
+    list-style: none;
+    margin-left: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+}
+.icons .container li:hover{
+    background-color: var(--seconder);
+}
+.icons .container a{
+    text-transform: none;
+    margin-left: 20px;
+}
+
+.icons .container i{
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    
+}
